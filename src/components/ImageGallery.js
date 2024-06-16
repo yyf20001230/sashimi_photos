@@ -38,6 +38,7 @@ const Card = ({ card }) => {
       className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
     >
       <img
+        loading="lazy"
         style={{
           backgroundSize: "cover",
           backgroundPosition: "center",

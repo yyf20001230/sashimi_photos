@@ -3,6 +3,9 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Header from '../components/Header';
 import Navigator from '../components/Navigator';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const LandscapePage = () => {
 
@@ -27,11 +30,13 @@ const LandscapePage = () => {
             <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
-                    <img
-                    key={index}
-                    src={photo.src}
-                    alt={photo.alt}
-                    style={{ width: "100%", display: "block" }}
+                    <LazyLoadImage
+                        key={index}
+                        alt={"landscape" + index}
+                        src={photo.src}
+                        placeholderSrc={photo.src}
+                        effect="blur"
+                        style={{ width: "100%", display: "block" }}
                     />
                 ))}
                 </Masonry>

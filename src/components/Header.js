@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 import { FaInstagram } from 'react-icons/fa';
 
-import IconBlack from '../assets/photography_black.svg';
-import IconWhite from '../assets/photography_white.svg';
+import IconBlack from '../assets/icon_black.svg';
+import IconWhite from '../assets/icon_white.svg';
 
 
 
@@ -49,8 +49,8 @@ const HeaderPage = ({ fontColor }) => {
     return (
       <div className="nav-container">
         <div className="logo" style={{ color: fontColor }}>
-          { iconColor === 'white' ? <div className="logo-container"><img src={IconWhite} alt="Icon" width="40px"/>SashimiPhotos</div>
-          : <div className="logo-container"><img src={IconBlack} alt="Icon" width="40px"/>SashimiPhotos</div>
+          { iconColor === 'white' ? <div className="logo-container"><img src={IconWhite} loading="lazy" alt="Icon" width="40px"/>SashimiPhotos</div>
+          : <div className="logo-container"><img src={IconBlack} loading="lazy" alt="Icon" width="40px"/>SashimiPhotos</div>
           }
         </div>
         {showMenu && (

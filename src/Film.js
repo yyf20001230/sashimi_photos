@@ -25,7 +25,7 @@ const FilmPage = () => {
     <div>
       <div className="film-page">
         <HeaderPage fontColor="white"/>
-        <div className="film-image"/>
+        <img className="film-image" src={require("./assets/film.JPG")} loading="lazy" alt="film"/>
         <div className="movie-list">
             {movies.map((movie) => (
                 <Link
@@ -46,7 +46,7 @@ const FilmPage = () => {
             <div className="video-filter"></div>
 
             {hoveredMovie && (
-                <video className="background-video" src={hoveredMovie.videoSrc} autoPlay muted loop />
+                <video loading="lazy" className="background-video" src={hoveredMovie.videoSrc} autoPlay muted loop />
             )}
         </div>
       </div>

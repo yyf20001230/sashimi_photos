@@ -10,16 +10,16 @@
     font-size: 1.8em;
     font-family: Abel, monospace;
     text-align: left;
-    margin: 5% 15% 5% 15%;
+    margin: 5% 10% 5% 10%;
 }
 
 .container .img-box {
     display: inline-block; /* shrink wrap to image */
     overflow: hidden; /* hide the excess */
-    width: 70%;
+    width: 80%;
     height: 40vh;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
 .container .img-box img {

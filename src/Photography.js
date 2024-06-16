@@ -3,7 +3,6 @@ import HeaderPage from './components/Header';
 import ImageContainer from './components/Container';
 import './styles/Photography.css';
 
-
 const PhotographyPage = () => {
   return (
     <div className="photography-page">

@@ -8,7 +8,7 @@ const ImageContainer = ({image, text}) => {
         <div className="container">
             <div className="img-box">
                 <Link to={'/photography/' + text.toLowerCase()}>
-                    <img loading="lazy" src={image} alt={text}/>
+                    <img key={text} src={image} alt={text} />
                 </Link>
             </div>
             <p>{text}</p>

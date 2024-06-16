@@ -28,6 +28,7 @@ const PeoplePage = () => {
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
                     <img
+                    loading="lazy"
                     key={index}
                     src={photo.src}
                     alt={photo.alt}
