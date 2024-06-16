@@ -8,7 +8,7 @@ import video1 from './assets/filmPage/1.MOV';
 import video2 from './assets/filmPage/2.MOV';
 import video3 from './assets/filmPage/2.MOV';
 
-import Film from './assets/filmPage/film.jpg';
+import Film from './assets/film.jpg';
 
 import { Link } from 'react-router-dom';
 

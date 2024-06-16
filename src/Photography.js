@@ -14,11 +14,11 @@ const PhotographyPage = () => {
     <div className="photography-page">
       <HeaderPage fontColor="black"/>
       <div className="photo-grid">
-        <ImageContainer image={require(Landscape)} text="Landscape"/>
-        <ImageContainer image={require(Perspective)} text="Perspective"/>
-        <ImageContainer image={require(Graduation)} text="Graduation"/>
-        <ImageContainer image={require(People)} text="People"/>
-        <ImageContainer image={require(City)} text="City"/>
+        <ImageContainer image={Landscape} text="Landscape"/>
+        <ImageContainer image={Perspective} text="Perspective"/>
+        <ImageContainer image={Graduation} text="Graduation"/>
+        <ImageContainer image={People} text="People"/>
+        <ImageContainer image={City} text="City"/>
       </div>  
     </div>
   );
