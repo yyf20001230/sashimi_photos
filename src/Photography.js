@@ -3,11 +3,11 @@ import HeaderPage from './components/Header';
 import ImageContainer from './components/Container';
 import './styles/Photography.css';
 
-import Landscape from './assets/photographyPage/landscape.jpg';
-import Perspective from './assets/photographyPage/perspective.jpg';
-import Graduation from './assets/photographyPage/graduation.jpg';
-import People from './assets/photographyPage/people.jpg';
-import City from './assets/photographyPage/city.jpg';
+import Landscape from './assets/photographyPage/landscape.JPG';
+import Perspective from './assets/photographyPage/perspective.JPG';
+import Graduation from './assets/photographyPage/graduation.JPG';
+import People from './assets/photographyPage/people.JPG';
+import City from './assets/photographyPage/city.JPG';
 
 const PhotographyPage = () => {
   return (
