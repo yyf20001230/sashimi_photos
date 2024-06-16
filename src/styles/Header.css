@@ -44,6 +44,9 @@
   
   .nav-items li {
     margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   
   .nav-items li .link{
@@ -65,7 +68,7 @@
     text-decoration: underline;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     .logo {
       font-size: 24px;
       margin: 3vw;

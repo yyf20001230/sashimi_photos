@@ -15,14 +15,22 @@
     background-size: cover;
     background-position: center;
   }
-  
+
   .background-video {
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     z-index: -2;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
   }
 
   .video-filter {
@@ -51,11 +59,17 @@
   }
 
   .movie-list .movie-item {
-    font-size: 4em;
+    font-size: 3.5em;
     font-family: Abel, monospace;
     padding: 0.2em;
   }
 
   .movie-list .movie-item:hover {
     color: rgba(0, 0, 0, 0.5);
+  }
+
+  @media screen and (max-width: 1200px){
+    .movie-list {
+      padding-left: 20vw;
+    }
   }

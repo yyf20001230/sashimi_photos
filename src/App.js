@@ -18,16 +18,16 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<LandingPage />} />
-          <Route path="/photography" element={<PhotographyPage />} />
-          <Route path="/photography/landscape" element={<LandscapePage />} />
-          <Route path="/photography/perspective" element={<PerspectivePage />} />
-          <Route path="/photography/graduation" element={<GraduationPage />} />
-          <Route path="/photography/people" element={<PeoplePage />} />
-          <Route path="/photography/city" element={<CityPage />} />
-          <Route path="/film" element={<FilmPage />} />
-          <Route path="/film/hot" element={<HotPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route exact path="/" element={<LandingPage />} gestureHandling="none"/>
+          <Route path="/photography" element={<PhotographyPage />} gestureHandling="none"/>
+          <Route path="/photography/landscape" element={<LandscapePage />} gestureHandling="none" />
+          <Route path="/photography/perspective" element={<PerspectivePage />} gestureHandling="none"/>
+          <Route path="/photography/graduation" element={<GraduationPage />} gestureHandling="none"/>
+          <Route path="/photography/people" element={<PeoplePage />} gestureHandling="none"/>
+          <Route path="/photography/city" element={<CityPage />} gestureHandling="none"/>
+          <Route path="/film" element={<FilmPage />} gestureHandling="none"/>
+          <Route path="/film/hot" element={<HotPage />} gestureHandling="none"/>
+          <Route path="/about" element={<AboutPage />} gestureHandling="none"/>
         </Routes>
         <FooterPage />
       </Router>

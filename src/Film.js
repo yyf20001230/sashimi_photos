@@ -46,9 +46,7 @@ const FilmPage = () => {
             <div className="video-filter"></div>
 
             {hoveredMovie && (
-                <div>
-                  <video className="background-video" src={hoveredMovie.videoSrc} autoPlay muted loop />
-                </div>
+                <video className="background-video" src={hoveredMovie.videoSrc} autoPlay muted loop />
             )}
         </div>
       </div>

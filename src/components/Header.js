@@ -60,7 +60,7 @@ const HeaderPage = ({ fontColor }) => {
               <li><Link to="/photography" className="link">Photography</Link></li>
               <li><Link to="/film" className="link">Film</Link></li>
               <li><Link to="/about" className="link">About</Link></li>
-              <li style={{ color: 'black', marginTop: '20vh' }}><Link to="https://www.instagram.com/sashimii_photos/" target="_blank" className="link"><FaInstagram/></Link></li>
+              <li style={{ color: 'black' }}><Link to="https://www.instagram.com/sashimii_photos/" target="_blank" className="link"><FaInstagram/></Link></li>
             </ul>
           </div>
         )}
