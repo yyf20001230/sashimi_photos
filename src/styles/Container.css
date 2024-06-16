@@ -17,7 +17,7 @@
     display: inline-block; /* shrink wrap to image */
     overflow: hidden; /* hide the excess */
     width: 80%;
-    height: 40vh;
+    height: 22.5vw;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -42,4 +42,13 @@
     .container p {
         font-size: 1.5em;
     }
+
+    .container .img-box {
+        display: inline-block; /* shrink wrap to image */
+        overflow: hidden; /* hide the excess */
+        width: 80%;
+        height: 45vw;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
 }

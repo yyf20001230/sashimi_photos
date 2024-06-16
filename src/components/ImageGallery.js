@@ -43,7 +43,7 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        src={require('../assets/landscape/1.JPG')}
+        src={require('../assets/landscape/1.jpg')}
         alt={"stills"}
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></img>

@@ -16,7 +16,7 @@ const AboutPage = () => {
                 schedule a photo shoot or videography session with me, feel free to reach out to me in
                 the contact section below!
             </p>
-            <img src={require("./assets/about.JPG")} loading="lazy" alt="About Me" />
+            <img src={require("./assets/about.jpg")} loading="lazy" alt="About Me" />
         </div>
     </div>
   );

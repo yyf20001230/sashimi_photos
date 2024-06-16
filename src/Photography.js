@@ -8,11 +8,11 @@ const PhotographyPage = () => {
     <div className="photography-page">
       <HeaderPage fontColor="black"/>
       <div className="photo-grid">
-        <ImageContainer image={require("./assets/photographyPage/landscape.JPG")} text="Landscape"/>
-        <ImageContainer image={require("./assets/photographyPage/perspective.JPG")} text="Perspective"/>
-        <ImageContainer image={require("./assets/photographyPage/graduation.JPG")} text="Graduation"/>
-        <ImageContainer image={require("./assets/photographyPage/people.JPG")} text="People"/>
-        <ImageContainer image={require("./assets/photographyPage/city.JPG")} text="City"/>
+        <ImageContainer image={require("./assets/photographyPage/landscape.jpg")} text="Landscape"/>
+        <ImageContainer image={require("./assets/photographyPage/perspective.jpg")} text="Perspective"/>
+        <ImageContainer image={require("./assets/photographyPage/graduation.jpg")} text="Graduation"/>
+        <ImageContainer image={require("./assets/photographyPage/people.jpg")} text="People"/>
+        <ImageContainer image={require("./assets/photographyPage/city.jpg")} text="City"/>
       </div>  
     </div>
   );

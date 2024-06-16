@@ -25,7 +25,7 @@ const FilmPage = () => {
     <div>
       <div className="film-page">
         <HeaderPage fontColor="white"/>
-        <img className="film-image" src={require("./assets/film.JPG")} loading="lazy" alt="film"/>
+        <img className="film-image" src={require("./assets/film.jpg")} loading="eager" alt="film"/>
         <div className="movie-list">
             {movies.map((movie) => (
                 <Link
