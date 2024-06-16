@@ -8,6 +8,7 @@ import PeoplePage from './pages/People';
 import GraduationPage from './pages/Graduation';
 import FilmPage from './Film';
 import HotPage from './pages/Hot';
+import AboutPage from './About';
 import FooterPage from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/photography/city" element={<CityPage />} />
           <Route path="/film" element={<FilmPage />} />
           <Route path="/film/hot" element={<HotPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
         <FooterPage />
       </Router>

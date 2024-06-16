@@ -58,6 +58,11 @@
   .nav-items li .link:hover {
     text-underline-offset: 10px;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  .nav-items li .link:active {
+    text-decoration: underline;
   }
 
   @media screen and (max-width: 800px) {

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/source_code_pro/SourceCodePro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/abel/Abel-Regular.ttf') format('truetype');
+}
+
+.about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .about-me h1 {
+    font-size: 60px;
+    font-family: Abel, monospace;
+    font-weight: 100;
+    margin-left: 10vw;
+  }
+  
+  .about-me p {
+    font-size: 26px;
+    line-height: 1.8;
+    font-family: Abel, monospace;
+    margin-left: 10vw;
+    width: 50%;
+  }
+  
+  .about-me img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 25%;
+    z-index: -1;
+  }

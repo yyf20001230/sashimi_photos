@@ -12,6 +12,7 @@ import IconWhite from '../assets/photography_white.svg';
 const HeaderPage = ({ fontColor }) => {
 
     const [showMenu, setShowMenu] = useState(false);
+    const [iconColor, setIconColor] = useState(fontColor);
 
     const toggleMenu = () => {
 
@@ -20,10 +21,12 @@ const HeaderPage = ({ fontColor }) => {
           document.querySelector('.logo').style.color = 'black';
           document.querySelectorAll('.bar')[0].style.backgroundColor = 'black';
           document.querySelectorAll('.bar')[1].style.backgroundColor = 'black';
+          setIconColor('black');
         } else {
           document.querySelector('.logo').style.color = 'white';
           document.querySelectorAll('.bar')[0].style.backgroundColor = 'white';
           document.querySelectorAll('.bar')[1].style.backgroundColor = 'white';
+          setIconColor('white');
         }
         document.querySelector('.logo').style.zIndex = 1;
         document.querySelectorAll('.bar')[0].style.zIndex = 1;
@@ -33,6 +36,7 @@ const HeaderPage = ({ fontColor }) => {
           document.querySelector('.logo').style.color = 'black';
           document.querySelectorAll('.bar')[0].style.backgroundColor = 'black';
           document.querySelectorAll('.bar')[1].style.backgroundColor = 'black';
+          setIconColor('black');
         }
         document.querySelector('.logo').style.zIndex = 100;
         document.querySelectorAll('.bar')[0].style.zIndex = 100;
@@ -45,7 +49,7 @@ const HeaderPage = ({ fontColor }) => {
     return (
       <div className="nav-container">
         <div className="logo" style={{ color: fontColor }}>
-          { document.querySelector('.logo').style.color === 'white' ? <div className="logo-container"><img src={IconWhite} alt="Icon" width="40px"/>SashimiPhotos</div>
+          { iconColor === 'white' ? <div className="logo-container"><img src={IconWhite} alt="Icon" width="40px"/>SashimiPhotos</div>
           : <div className="logo-container"><img src={IconBlack} alt="Icon" width="40px"/>SashimiPhotos</div>
           }
         </div>
