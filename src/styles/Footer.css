@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/source_code_pro/SourceCodePro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/abel/Abel-Regular.ttf') format('truetype');
+}
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 10vw;
+  }
+  
+  .footer-content p {
+    font-size: 1.5vw;
+    font-family: Abel, monospace;
+  }
+  
+  .contact-info {
+    display: flex;
+    font-size: 1vw;
+    font-family: Source Code Pro, monospace;
+  }
+  
+  .contact-info a, .contact-info div{
+    margin: 2vw;
+    color:black;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+
+  @media screen and (max-width: 800px){
+
+    .footer-content {
+      display: none;
+    }
+  }

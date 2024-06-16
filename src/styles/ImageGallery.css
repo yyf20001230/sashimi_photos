@@ -1,0 +1,38 @@
+.image-gallery {
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    width: 100px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .image-item {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    position: relative;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+  }

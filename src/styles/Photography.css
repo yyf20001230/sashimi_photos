@@ -1,0 +1,11 @@
+.photography-page {
+  position: relative;
+}
+
+.photo-grid {
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-top: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+}

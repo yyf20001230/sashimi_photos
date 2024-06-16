@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/source_code_pro/SourceCodePro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/abel/Abel-Regular.ttf') format('truetype');
+}
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/landingpage.JPG');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+  }
+  
+  header {
+    position: absolute;
+    top: 40vh;
+    right: 10vw;
+    color: white;
+    font-family: Abel, monospace;
+  }
+  
+  header h1 {
+    font-size: 128px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 36px;
+  }
+
+  /* Media query for mobile devices */
+@media screen and (max-width: 1000px) {
+    .landing-page {
+      height: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    header {
+      position: absolute;
+      top: 20vh;
+      left: 5vw;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  
+    header h1 {
+      font-size: 72px;
+    }
+  
+    header p {
+      font-size: 24px;
+    }
+  }
