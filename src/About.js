@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/About.css'; // Import the CSS file for styling
 
 import Header from './components/Header'; // Import the Header component
+import About from './assets/about.png'; // Import the image for the About page
 
 const AboutPage = () => {
   return (
@@ -16,7 +17,7 @@ const AboutPage = () => {
                 schedule a photo shoot or videography session with me, feel free to reach out to me in
                 the contact section below!
             </p>
-            <img src={require('./assets/about.png')} loading="lazy" alt="About Me" />
+            <img src={About} loading="lazy" alt="About Me" />
         </div>
     </div>
   );
