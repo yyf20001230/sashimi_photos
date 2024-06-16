@@ -8,7 +8,7 @@ import video1 from './assets/filmPage/1.MOV';
 import video2 from './assets/filmPage/2.MOV';
 import video3 from './assets/filmPage/2.MOV';
 
-import Film from './assets/film.jpg';
+import Film from './assets/film.JPG';
 
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ const FilmPage = () => {
     <div>
       <div className="film-page">
         <HeaderPage fontColor="white"/>
-        <img className="film-image" src={Film} loading="eager" alt="film"/>
+        <img className="film-image" src={Film} alt="film_img"/>
         <div className="movie-list">
             {movies.map((movie) => (
                 <Link
