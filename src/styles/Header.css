@@ -66,6 +66,7 @@
 
   .nav-items li .link:active {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
   }
 
   @media screen and (max-width: 1200px) {
