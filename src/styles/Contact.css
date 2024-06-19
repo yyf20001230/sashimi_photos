@@ -25,7 +25,7 @@
   .contact-form p {
     text-align: center;
     font-family: Source Code Pro, monospace;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 18px;
     align-self: center;
     width: 50%;
@@ -83,6 +83,22 @@
 
   textarea {
     height: 200px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .contact-form h2 {
+      font-size: 40px;
+    }
+  
+    .contact-form p {
+      font-size: 16px;
+      width: 90%;
+    }
+
+    .contact-form form {
+      width: 90%;
+    }
+    
   }
 
 

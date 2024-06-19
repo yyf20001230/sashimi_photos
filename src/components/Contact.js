@@ -24,10 +24,8 @@ const ContactForm = () => {
     <div className="contact-form">
       <h2>Contact me</h2>
       <p>
-        It all begins with an idea. Maybe you want to launch a business. Maybe you want to
-        turn a hobby into something more. Or maybe you have a creative project to share with
-        the world. Whatever it is, the way you tell your story online can make all the
-        difference.
+        It all begins with an idea. To schedule a photo shoot /videography session, request pricing information, 
+        or ask any other questions, simply complete the form below and I'll respond to your inquiry soon.
       </p>
       <form ref={form} onSubmit={handleSubmit}>
         <div className="form-content">
@@ -52,6 +50,7 @@ const ContactForm = () => {
           <label htmlFor="message">Message (required)</label>
           <textarea
             name="message"
+            placeholder="What session are you interested in? Portrait, graduation photo, film set BTS, etc."
             required
           ></textarea>
         </div>

@@ -53,6 +53,7 @@
     font-family: Abel, monospace;
     font-size: 20px;
     color: black;
+    padding-bottom: 20px;
   }
 
   .navigator li div {
@@ -67,7 +68,7 @@
   }
 
   .navigator li div * {
-    padding: 2px 5px 20px 5px;
+    padding: 2px 5px 2px 5px;
 }
 
 }
