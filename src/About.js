@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/About.css'; // Import the CSS file for styling
 
 import Header from './components/Header'; // Import the Header component
-import Contact from './components/Contact'; // Import the Contact component
+import ContactForm from './components/Contact'; // Import the Contact component
 import About from './assets/about.JPG'; // Import the image for the About page
 
 const AboutPage = () => {
@@ -20,7 +20,7 @@ const AboutPage = () => {
             </p>
             <img src={About} loading="lazy" alt="About Me" />
         </div>
-        <Contact />
+        <ContactForm />
     </div>
   );
 };

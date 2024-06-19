@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/source_code_pro/SourceCodePro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/abel/Abel-Regular.ttf') format('truetype');
+}
+
+.contact-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Abel, monospace;
+    font-size: 60px;
+  }
+  
+  .contact-form p {
+    text-align: center;
+    font-family: Source Code Pro, monospace;
+    line-height: 1.6;
+    font-size: 18px;
+    align-self: center;
+    width: 50%;
+    min-width: 450px;
+  }
+
+  .contact-form form {
+    align-self: center;
+    width: 50%;
+    min-width: 450px;
+  }
+
+  form {
+    margin: 5vh;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    font-family: Source Code Pro, monospace;
+    margin: 3vh 1vh;
+  }
+
+  .form-content input {
+    padding-top: 1vh;
+    font-size: 14px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(136, 136, 136);
+  }
+
+  .submit-button {
+    padding: 1vh 5vh;
+    font-size: 1em;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 1px solid rgb(56, 56, 56);
+    cursor: pointer;
+    font-family: Source Code Pro, monospace;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .submit-button {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+  }
+
+ .submit-button:hover {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-decoration: none;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+
+  

@@ -14,12 +14,12 @@ const Navigator = ({ links }) => {
                 <Link to={"/photography/" + link.toLowerCase()}>
                     {index === 0 ? 
                     <div>
-                        <RiArrowLeftWideLine/>
+                        <RiArrowLeftWideLine style={{ scale: "2" }}/>
                         {link}
                     </div> : 
                     <div>
                         {link}
-                        <RiArrowRightWideLine/>
+                        <RiArrowRightWideLine style={{ scale: "2" }}/>
                     </div>}
                 </Link>
             </li>

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/VideoPlayer.css';
 
 const VideoPlayer = ({ videoId }) => {
 
@@ -6,8 +7,6 @@ const VideoPlayer = ({ videoId }) => {
   return (
     <div className="video-player">
       <iframe
-        width="560"
-        height="315"
         src={`http://www.youtube.com/embed/${videoId}`}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

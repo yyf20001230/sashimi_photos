@@ -9,7 +9,7 @@
 }
 
 .about-me {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -24,7 +24,7 @@
   
   .about-me p {
     font-size: 26px;
-    line-height: 1.8;
+    line-height: 1.6;
     font-family: Abel, monospace;
     margin-left: 10vw;
     width: 50%;
@@ -36,4 +36,16 @@
     left: 50%;
     width: 25%;
     z-index: -1;
+  }
+
+  @media screen and (max-width: 768px){
+    .about-me img {
+      top: 30%;
+      left: 60%;
+      width: 300px;
+    }
+
+    .about-me p {
+      width: 80%;
+    }
   }
