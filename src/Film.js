@@ -18,8 +18,10 @@ const FilmPage = () => {
   const [hoveredMovie, setHoveredMovie] = useState(null);
 
   const movies = [
-    { title: 'Neuro 101 (2024)', videoSrc: video1 },
+    { title: 'Necro 101 (2024)', videoSrc: video1 },
     { title: 'Clark (2023)', videoSrc: video2 },
+    { title: 'Noumena (2024)', videoSrc: video1 },
+    { title: 'Two Flares Up (2022)', videoSrc: video3 },
     { title: 'Hot (2022)', videoSrc: video3 },
   ];
 
