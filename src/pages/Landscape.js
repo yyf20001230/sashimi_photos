@@ -27,6 +27,7 @@ const LandscapePage = () => {
     return (
         <div>
             <Header fontColor="black"/>
+            <Navigator links={["City", "Perspective"]} />
             <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
@@ -41,7 +42,6 @@ const LandscapePage = () => {
                 ))}
                 </Masonry>
             </ResponsiveMasonry>
-            <Navigator links={["City", "Perspective"]} />
         </div>
     );
 };

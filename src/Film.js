@@ -4,9 +4,11 @@ import './styles/Film.css';
 import HeaderPage from './components/Header';
 import ImageGallery from './components/ImageGallery';
 
-import video1 from './assets/filmPage/1.MOV';
-import video2 from './assets/filmPage/2.MOV';
-import video3 from './assets/filmPage/2.MOV';
+import Necro from './assets/filmPage/Necro.MOV';
+import Clark from './assets/filmPage/Clark.MOV';
+import Noumena from './assets/filmPage/Noumena.MOV';
+import Flares from './assets/filmPage/Flares.MOV';
+import Hot from './assets/filmPage/Hot.MOV';
 
 import Film from './assets/film.JPG';
 
@@ -18,11 +20,11 @@ const FilmPage = () => {
   const [hoveredMovie, setHoveredMovie] = useState(null);
 
   const movies = [
-    { title: 'Necro 101 (2024)', videoSrc: video1 },
-    { title: 'Clark (2023)', videoSrc: video2 },
-    { title: 'Noumena (2024)', videoSrc: video1 },
-    { title: 'Two Flares Up (2022)', videoSrc: video3 },
-    { title: 'Hot (2022)', videoSrc: video3 },
+    { title: 'Necro 101 (2024)', videoSrc: Necro },
+    { title: 'Clark (2023)', videoSrc: Clark },
+    { title: 'Noumena (2024)', videoSrc: Noumena },
+    { title: 'Two Flares Up (2022)', videoSrc: Flares },
+    { title: 'Hot (2022)', videoSrc: Hot },
   ];
 
   return (
@@ -34,7 +36,7 @@ const FilmPage = () => {
             {movies.map((movie) => (
                 <Link
                 key={movie.title}
-                to={"/film/" + movie.title.toLowerCase().split(' ')[0]}
+                to={"/film/" + movie.title.split(" (")[0].split(" ").join("").toLowerCase()}
                 className="movie-item"
                 onMouseEnter={() => {
                     setHoveredMovie(movie);

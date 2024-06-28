@@ -66,8 +66,12 @@
     color: rgba(0, 0, 0, 0.5);
   }
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1400px){
     .movie-list {
       padding-left: 20vw;
+    }
+
+    .movie-list .movie-item {
+      font-size: 8vw;
     }
   }

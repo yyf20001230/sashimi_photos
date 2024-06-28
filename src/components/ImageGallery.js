@@ -19,7 +19,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-black">
-      <div style={{ color: "white" }}> Stills </div>
+      <div style={{ color: "white" }}> Still Highlights </div>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {

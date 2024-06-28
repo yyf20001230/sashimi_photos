@@ -27,7 +27,8 @@ const CityPage = () => {
     return (
         <div>
             <Header fontColor="black"/>
-            <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
+            <Navigator links={["People", "Landscape"]} />
+            <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2, 1200: 3 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
                     <LazyLoadImage
@@ -41,7 +42,6 @@ const CityPage = () => {
                 ))}
                 </Masonry>
             </ResponsiveMasonry>
-            <Navigator links={["People", "Landscape"]} />
         </div>
     );
 };

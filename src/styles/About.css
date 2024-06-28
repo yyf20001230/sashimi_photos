@@ -27,25 +27,48 @@
     line-height: 1.6;
     font-family: Abel, monospace;
     margin-left: 10vw;
-    width: 50%;
+    width: 45vw;
   }
   
-  .about-me img {
+  .about-me .about-me-img {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 25%;
+    top: 10%;
+    left: 65vw;
+    width: 25vw;
     z-index: -1;
+    border-radius: 20px;
   }
 
-  @media screen and (max-width: 768px){
-    .about-me img {
-      top: 30%;
-      left: 60%;
-      width: 300px;
+  .about-me p div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #applause, #ted {
+    width: 150px;
+    height: 100px;
+    margin: 40px 20px;
+  }
+
+  #nu {
+    width: 250px;
+    height: 100px;
+    margin: 40px 20px;
+  }
+
+  @media screen and (max-width: 1200px){
+
+    #applause, #ted {
+      width: 90px;
+      height: 60px;
     }
 
-    img {
+    #nu {
+      width: 150px;
+      height: 60px;
+    }
+
+    .about-me .about-me-img{
       display: none;
     }
 

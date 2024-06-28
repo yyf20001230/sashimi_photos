@@ -23,6 +23,7 @@ const PerspectivePage = () => {
     return (
         <div>
             <Header fontColor="black"/>
+            <Navigator links={["Landscape", "Graduation"]} />
             <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
@@ -36,7 +37,6 @@ const PerspectivePage = () => {
                 ))}
                 </Masonry>
             </ResponsiveMasonry>
-            <Navigator links={["Landscape", "Graduation"]} />
         </div>
     );
 };
