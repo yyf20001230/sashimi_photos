@@ -3,6 +3,10 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Header from '../components/Header';
 import Navigator from '../components/Navigator';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+
 const PerspectivePage = () => {
 
     // Use require.context to dynamically import photos from the perspective folder
@@ -24,15 +28,16 @@ const PerspectivePage = () => {
         <div>
             <Header fontColor="black"/>
             <Navigator links={["Landscape", "Graduation"]} />
-            <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
+            <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2, 1200: 3 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
-                    <img
-                    loading="lazy"
-                    key={index}
-                    src={photo.src}
-                    alt={photo.alt}
-                    style={{ width: "100%", display: "block" }}
+                    <LazyLoadImage
+                        key={index}
+                        src={photo.src}
+                        alt={photo.alt}
+                        effect="blur"
+                        placeholderSrc={photo.src}
+                        style={{ width: "100%", display: "block" }}
                     />
                 ))}
                 </Masonry>

@@ -32,12 +32,12 @@ const CityPage = () => {
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
                     <LazyLoadImage
-                    key={index}
-                    src={photo.src}
-                    alt={photo.alt}
-                    effect="blur"
-                    placeholderSrc={photo.src}
-                    style={{ width: "100%", display: "block" }}
+                        key={index}
+                        src={photo.src}
+                        alt={photo.alt}
+                        effect="blur"
+                        placeholderSrc={photo.src}
+                        style={{ width: "100%", display: "block" }}
                     />
                 ))}
                 </Masonry>

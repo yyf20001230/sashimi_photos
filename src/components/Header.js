@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 import { FaInstagram } from 'react-icons/fa';
 
-import IconBlack from '../assets/icon_black.svg';
-import IconWhite from '../assets/icon_white.svg';
+import IconBlack from '../assets/util/icon_black.svg';
+import IconWhite from '../assets/util/icon_white.svg';
 
 
 

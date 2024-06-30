@@ -1,10 +1,25 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import "../styles/ImageGallery.css";
+
 
 const ImageGallery = () => {
   return (
     <div className="bg-neutral-800">
-      <HorizontalScrollCarousel />
+      {
+        window.innerWidth >= 1200 ? 
+        <HorizontalScrollCarousel />
+        : 
+        <section className="relative bg-black">
+          <div style={{ color: "white" }} className="highlight"> Still Highlights </div>
+          <div className="mobile-view">
+            { cards.map((card) => {
+              return <Card card={card} key={card.id}/>;
+            })}
+          </div>
+        </section>
+      }
+     
     </div>
   );
 };
@@ -19,11 +34,11 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-black">
-      <div style={{ color: "white" }}> Still Highlights </div>
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
+      <div style={{ color: "white" }} className="highlight"> Still Highlights </div>
+      <div className="sticky top-0 flex h-[100vh] items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-4 carousel-container">
           {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
+            return <Card card={card} key={card.id}/>;
           })}
         </motion.div>
       </div>
@@ -35,7 +50,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200 card"
     >
       <img
         loading="lazy"
@@ -43,15 +58,10 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        src={require('../assets/landscape/1.JPG')}
+        src={card.url}
         alt={"stills"}
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></img>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-          {card.title}
-        </p>
-      </div>
     </div>
   );
 };
@@ -60,38 +70,38 @@ export default ImageGallery;
 
 const cards = [
   {
-    url: "../assets/landscape/1.JPG",
+    url: require("../assets/stills/Necro1.png"),
     title: "Title 1",
     id: 1,
   },
   {
-    url: "../assets/landscape/2.JPG",
+    url: require("../assets/stills/Necro2.png"),
     title: "Title 2",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
+    url: require("../assets/stills/Necro3.png"),
     title: "Title 3",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
+    url: require("../assets/stills/Clark1.JPG"),
     title: "Title 4",
     id: 4,
   },
   {
-    url: "/imgs/abstract/5.jpg",
+    url: require("../assets/stills/Clark2.JPG"),
     title: "Title 5",
     id: 5,
   },
   {
-    url: "/imgs/abstract/6.jpg",
+    url: require("../assets/stills/Flare1.png"),
     title: "Title 6",
     id: 6,
   },
   {
-    url: "/imgs/abstract/7.jpg",
+    url: require("../assets/stills/Noumena1.png"),
     title: "Title 7",
     id: 7,
-  },
+  }
 ];

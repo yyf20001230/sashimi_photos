@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('../fonts/source_code_pro/SourceCodePro-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Abel';
+  src: url('../fonts/abel/Abel-Regular.ttf') format('truetype');
+}
+
 .image-gallery {
     display: flex;
     align-items: center;
@@ -35,4 +45,31 @@
     left: 10px;
     color: white;
     font-size: 18px;
+  }
+
+  .highlight {
+    font-family: Abel, monospace;
+    margin-left: 5vw;
+    padding-top: 8vh;
+    font-size: 5vh;
+    margin-bottom: 0;
+  }
+
+  .card {
+    height: 28vw;
+    width: 70vw;
+  }
+
+  @media (max-width: 1200px){
+    .card {
+      margin-top: 5vh;
+    }
+
+    .mobile-view {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10vh;
+    }
   }

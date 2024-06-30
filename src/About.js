@@ -4,10 +4,10 @@ import './styles/About.css'; // Import the CSS file for styling
 import Header from './components/Header'; // Import the Header component
 import ContactForm from './components/Contact'; // Import the Contact component
 
-import About from './assets/about.JPG'; // Import the image for the About page
-import NU from './assets/NU.JPG'; // Import the image for the NU project
-import Tedx from './assets/Tedx.JPG'; // Import the image for the TEDx project
-import Applause from './assets/Applause.JPG'; // Import the image for the Applause project
+import About from './assets/util/about.JPG'; // Import the image for the About page
+import NU from './assets/util/NU.JPG'; // Import the image for the NU project
+import Tedx from './assets/util/Tedx.JPG'; // Import the image for the TEDx project
+import Applause from './assets/util/Applause.JPG'; // Import the image for the Applause project
 
 const AboutPage = () => {
   return (

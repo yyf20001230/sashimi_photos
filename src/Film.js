@@ -10,10 +10,9 @@ import Noumena from './assets/filmPage/Noumena.MOV';
 import Flares from './assets/filmPage/Flares.MOV';
 import Hot from './assets/filmPage/Hot.MOV';
 
-import Film from './assets/film.JPG';
+import Film from './assets/util/film.JPG';
 
 import { Link } from 'react-router-dom';
-
 
 const FilmPage = () => {
 
