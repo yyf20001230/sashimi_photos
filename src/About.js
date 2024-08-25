@@ -30,6 +30,7 @@ const AboutPage = () => {
                 </div>
             </p>
             <img className="about-me-img" src={About} loading="lazy" alt="About Me" />
+            <a className="about-me-img" href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsashimiphotos.com&count_bg=%23A2CCE5&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="sticker"/></a>                        
         </div>
         <ContactForm />
     </div>
