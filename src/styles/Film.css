@@ -43,7 +43,7 @@
 
   .movie-list {
     padding-top: 5vh;
-    padding-left: 65vw;
+    padding-left: 60vw;
     display: flex;
     flex-direction: column;
     color: white;
@@ -57,7 +57,7 @@
   }
 
   .movie-list .movie-item {
-    font-size: 3.5em;
+    font-size: 3.5vw;
     font-family: Abel, monospace;
     padding: 0.2em;
   }
@@ -66,12 +66,12 @@
     color: rgba(0, 0, 0, 0.5);
   }
 
-  @media screen and (max-width: 1400px){
+  @media screen and (max-width: 1300px){
     .movie-list {
-      padding-left: 20vw;
+      padding-left: 30vw;
     }
 
     .movie-list .movie-item {
-      font-size: 8vw;
+      font-size: 5vw;
     }
   }

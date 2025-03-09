@@ -1,15 +1,24 @@
 .video-player {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    background-color: black;
   }
   
   .video-player iframe {
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 80%;
-    margin-left: 10%;
+    width: 100vw;
+    height: 100%;
+    margin-top: -7vh;
+    margin-bottom: -100%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .video-player {
+      margin-top: -3vh;
+    }
   }

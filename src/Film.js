@@ -55,9 +55,47 @@ const FilmPage = () => {
             )}
         </div>
       </div>
-      <ImageGallery />
+      <ImageGallery cards={cards}/>
     </div>
   );
 };
 
 export default FilmPage;
+
+const cards = [
+  {
+    url: require("./assets/stills/Necro1.png"),
+    title: "Title 1",
+    id: 1,
+  },
+  {
+    url: require("./assets/stills/Necro2.png"),
+    title: "Title 2",
+    id: 2,
+  },
+  {
+    url: require("./assets/stills/Necro3.png"),
+    title: "Title 3",
+    id: 3,
+  },
+  {
+    url: require("./assets/stills/Clark1.JPG"),
+    title: "Title 4",
+    id: 4,
+  },
+  {
+    url: require("./assets/stills/Clark2.JPG"),
+    title: "Title 5",
+    id: 5,
+  },
+  {
+    url: require("./assets/stills/Flare1.png"),
+    title: "Title 6",
+    id: 6,
+  },
+  {
+    url: require("./assets/stills/Noumena1.png"),
+    title: "Title 7",
+    id: 7,
+  }
+];

@@ -49,10 +49,10 @@
 
   .highlight {
     font-family: Abel, monospace;
-    margin-left: 5vw;
+    margin-left: 10vw;
     padding-top: 8vh;
-    font-size: 5vh;
-    margin-bottom: 0;
+    font-size: 3.5vh;
+    margin-bottom: -17vh;
   }
 
   .card {
@@ -61,8 +61,13 @@
   }
 
   @media (max-width: 1200px){
+
+    .highlight {
+      margin-bottom: 0;
+    }
+
     .card {
-      margin-top: 5vh;
+      margin-top: 5vw;
     }
 
     .mobile-view {

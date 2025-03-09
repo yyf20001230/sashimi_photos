@@ -2,13 +2,13 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import "../styles/ImageGallery.css";
 
+const ImageGallery = ({ cards, padding }) => {
 
-const ImageGallery = () => {
   return (
     <div className="bg-neutral-800">
       {
         window.innerWidth >= 1200 ? 
-        <HorizontalScrollCarousel />
+        <HorizontalScrollCarousel cards={cards} padding={padding}/>
         : 
         <section className="relative bg-black">
           <div style={{ color: "white" }} className="highlight"> Still Highlights </div>
@@ -24,7 +24,7 @@ const ImageGallery = () => {
   );
 };
 
-const HorizontalScrollCarousel = () => {
+const HorizontalScrollCarousel = ({ cards, padding }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -35,7 +35,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-black">
       <div style={{ color: "white" }} className="highlight"> Still Highlights </div>
-      <div className="sticky top-0 flex h-[100vh] items-center overflow-hidden">
+      <div className="sticky top-0 flex h-[100vh] items-center overflow-hidden" style={{ paddingLeft: `${padding}vw`}}>
         <motion.div style={{ x }} className="flex gap-4 carousel-container">
           {cards.map((card) => {
             return <Card card={card} key={card.id}/>;
@@ -67,41 +67,3 @@ const Card = ({ card }) => {
 };
 
 export default ImageGallery;
-
-const cards = [
-  {
-    url: require("../assets/stills/Necro1.png"),
-    title: "Title 1",
-    id: 1,
-  },
-  {
-    url: require("../assets/stills/Necro2.png"),
-    title: "Title 2",
-    id: 2,
-  },
-  {
-    url: require("../assets/stills/Necro3.png"),
-    title: "Title 3",
-    id: 3,
-  },
-  {
-    url: require("../assets/stills/Clark1.JPG"),
-    title: "Title 4",
-    id: 4,
-  },
-  {
-    url: require("../assets/stills/Clark2.JPG"),
-    title: "Title 5",
-    id: 5,
-  },
-  {
-    url: require("../assets/stills/Flare1.png"),
-    title: "Title 6",
-    id: 6,
-  },
-  {
-    url: require("../assets/stills/Noumena1.png"),
-    title: "Title 7",
-    id: 7,
-  }
-];

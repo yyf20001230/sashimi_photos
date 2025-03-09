@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 const Footer = () => {
 
     const location = useLocation();
-    const isRootPath = location.pathname === "/" || location.pathname === "/film";
+    const isRootPath = location.pathname === "/" || location.pathname.includes("/film");
 
     return (
         <div className="footer-content" style={{ backgroundColor: isRootPath ? "black" : "white"}}>

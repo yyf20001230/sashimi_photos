@@ -1,16 +1,15 @@
 import React from 'react';
 import '../styles/VideoPlayer.css';
 
-const VideoPlayer = ({ videoId }) => {
+const VideoPlayer = ({ link, margin }) => {
 
-  console.log(videoId);
   return (
-    <div className="video-player">
+    <div className="video-player" style={{ marginTop: `${margin}vw` }}>
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}`}
+        src={link}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        title="YouTube Video"
+        title="Video"
       ></iframe>
     </div>
   );

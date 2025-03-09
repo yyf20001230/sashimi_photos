@@ -1,0 +1,36 @@
+.text-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: Abel, monospace;
+    position: relative;
+    margin-top: -12vw;
+    padding-left: 10vw;
+    padding-top: 2vw;
+}
+
+.title {
+    display: flex;
+    color: white;
+    font-size: 3.5vh;
+}
+
+.text-entry {
+    display: flex;
+    color: rgb(190, 190, 190);
+    font-size: 2vh;
+}
+
+.description {
+    display: flex;
+    color: white;
+    font-size: 2.5vh;
+    width: 70vw;
+    margin-top: 2vh;
+}
+
+.watch-link {
+    display: flex;
+    color: orange;
+    font-size: 2.5vh;
+}

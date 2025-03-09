@@ -22,7 +22,6 @@ const LandscapePage = () => {
         const numB = parseInt(b.alt.match(/\d+/)[0]);
         return numA - numB;
     });
-    console.log(sortedPhotos);
 
     return (
         <div>
