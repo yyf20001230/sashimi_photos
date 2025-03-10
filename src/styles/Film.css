@@ -68,7 +68,8 @@
 
   @media screen and (max-width: 1300px){
     .movie-list {
-      padding-left: 25vw;
+      padding-top: 20vh;
+      padding-left: 20vw;
     }
 
     .movie-list .movie-item:hover {
@@ -76,14 +77,15 @@
     }
 
     .film-page {
-      height: 80vw;
+      height: 100vh;
     }
 
     .film-image {
-      height: 80vw;
+      height: 100vh;
     }
 
     .movie-list .movie-item {
-      font-size: 4vw;
+      font-size: 3vh;
+      padding-top: 2vh;
     }
   }

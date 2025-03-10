@@ -12,7 +12,7 @@ const FlaresPage = () => {
   return (
     <div style={{ backgroundColor: "black" }}>
       <Header fontColor="white"/>
-      <VideoPlayer link={videoLink} margin={-3}/>
+      <VideoPlayer link={videoLink} margin={-2}/>
       <div className="text-container">
         <div className="title">Two Flares Up</div>
         <div className="text-entry">Senior Directing Film</div>

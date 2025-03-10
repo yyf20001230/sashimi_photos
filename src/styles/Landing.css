@@ -63,17 +63,17 @@
   
     header {
       position: absolute;
-      top: 20vh;
-      left: 5vw;
+      top: 35vh;
+      left: 10vw;
       text-align: left;
       margin-bottom: 20px;
     }
   
     header h1 {
-      font-size: 72px;
+      font-size: 10vw;
     }
   
     header p {
-      font-size: 24px;
+      font-size: 5vw;
     }
   }
