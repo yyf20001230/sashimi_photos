@@ -54,11 +54,11 @@
 
   .about-me-img {
     position: absolute;
-    top: 100%;
-    left: 97vw;
+    top: 100vh;
+    left: 96vw;
     z-index: 1;
     color: rgb(40, 40, 40);
-    width: 50px;
+    width: 4vw;
   }
 
   /* Media query for mobile devices */
