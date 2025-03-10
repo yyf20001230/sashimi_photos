@@ -52,6 +52,15 @@
     font-size: 36px;
   }
 
+  .about-me-img {
+    position: absolute;
+    top: 100%;
+    left: 97vw;
+    z-index: 1;
+    color: rgb(40, 40, 40);
+    width: 50px;
+  }
+
   /* Media query for mobile devices */
 @media screen and (max-width: 1000px) {
     .landing-page {
@@ -75,5 +84,9 @@
   
     header p {
       font-size: 5vw;
+    }
+
+    .about-me-img {
+      display: none;
     }
   }
