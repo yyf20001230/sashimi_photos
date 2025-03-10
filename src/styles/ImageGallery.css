@@ -75,6 +75,7 @@
     .mobile-view {
       display: flex;
       flex-direction: column;
+      padding-top: 0vh;
       padding-bottom: 10vh;
       padding-left: 10vw;
     }

@@ -126,14 +126,14 @@
     background: rgb(60, 60, 60);
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
 
     .logo-container {
-      font-size: 4vw;
+      font-size: 3.5vw;
     }
 
     .logo {
-      font-size: 4vw;
+      font-size: 3.5vw;
       width: 4vw;
       margin: 0.5vw;
     }
