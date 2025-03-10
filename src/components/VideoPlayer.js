@@ -7,7 +7,7 @@ const VideoPlayer = ({ link, margin }) => {
     <div className="video-player" style={{ marginTop: `${margin}vw` }}>
       <iframe
         src={link}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="autoplay"
         allowFullScreen
         title="Video"
       ></iframe>

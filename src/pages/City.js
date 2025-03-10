@@ -5,6 +5,7 @@ import Navigator from '../components/Navigator';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import '../styles/Photography.css';
 
 
 const CityPage = () => {
@@ -22,12 +23,13 @@ const CityPage = () => {
         const numB = parseInt(b.alt.match(/\d+/)[0]);
         return numA - numB;
     });
-    console.log(sortedPhotos);
 
     return (
         <div>
             <Header fontColor="black"/>
-            <Navigator links={["People", "Landscape"]} />
+            <div className="photography-header">
+                <h1>City</h1>
+            </div>
             <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2, 1200: 3 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
@@ -42,6 +44,7 @@ const CityPage = () => {
                 ))}
                 </Masonry>
             </ResponsiveMasonry>
+            <Navigator links={["People", "Landscape"]} />
         </div>
     );
 };

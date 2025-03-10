@@ -1,5 +1,17 @@
+@font-face {
+  font-family: 'Abel';
+  src: url('../fonts/abel/Abel-Regular.ttf') format('truetype');
+}
+
 .photography-page {
   position: relative;
+}
+
+.photography-header {
+  text-align: center;
+  font-family: Abel, monospace;
+  font-size: 40px;
+  color: black;
 }
 
 .photo-grid {

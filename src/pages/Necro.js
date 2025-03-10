@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import '../styles/Introduction.css';
 
 const NecroPage = () => {
-  const videoLink = 'https://www.youtube.com/embed/6wPXHCJVfJc?modestbranding=1&controls=0&rel=0&showinfo=0&loop=1&hd=1';
+  const videoLink = 'https://www.youtube.com/embed/6wPXHCJVfJc?modestbranding=1&controls=0&rel=0&showinfo=0&loop=1&hd=1&autoplay=1&showinfo=0';
 
   return (
     <div style={{ backgroundColor: "black" }}>

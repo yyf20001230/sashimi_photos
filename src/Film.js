@@ -4,15 +4,14 @@ import './styles/Film.css';
 import HeaderPage from './components/Header';
 import ImageGallery from './components/ImageGallery';
 
-import Necro from './assets/filmPage/Necro.MOV';
-import Clark from './assets/filmPage/Clark.MOV';
-import Noumena from './assets/filmPage/Noumena.MOV';
-import Flares from './assets/filmPage/Flares.MOV';
-import Hot from './assets/filmPage/Hot.MOV';
-
-import Film from './assets/util/film.JPG';
-
 import { Link } from 'react-router-dom';
+
+const Necro = "https://res.cloudinary.com/dpagnkhim/video/upload/v1741597580/Necro_bufgw3.mov";
+const Clark = "https://res.cloudinary.com/dpagnkhim/video/upload/v1741597531/Clark_w4roz6.mov";
+const Noumena = "https://res.cloudinary.com/dpagnkhim/video/upload/v1741597602/Noumena_c5l3ar.mov";
+const Flares = "https://res.cloudinary.com/dpagnkhim/video/upload/v1741597605/Flares_qawkpb.mov";
+const Hot = "https://res.cloudinary.com/dpagnkhim/video/upload/v1741597622/Hot_bxq7uh.mov";
+const Film = "https://res.cloudinary.com/dpagnkhim/image/upload/v1741597629/film_rj5efq.jpg";
 
 const FilmPage = () => {
 
@@ -38,10 +37,14 @@ const FilmPage = () => {
                 to={"/film/" + movie.title.split(" (")[0].split(" ").join("").toLowerCase()}
                 className="movie-item"
                 onMouseEnter={() => {
+                  if (window.innerWidth >= 1200){
                     setHoveredMovie(movie);
+                  } else {
+                    setHoveredMovie(null);
+                  }
                 }}
                 onMouseLeave={() => {
-                    setHoveredMovie(null);
+                  setHoveredMovie(null);
                 }}
                 >
                 {movie.title}
@@ -55,7 +58,7 @@ const FilmPage = () => {
             )}
         </div>
       </div>
-      <ImageGallery cards={cards}/>
+      <ImageGallery cards={cards} padding={5}/>
     </div>
   );
 };

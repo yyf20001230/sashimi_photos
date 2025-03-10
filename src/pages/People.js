@@ -2,6 +2,7 @@ import React from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Header from '../components/Header';
 import Navigator from '../components/Navigator';
+import '../styles/Photography.css';
 
 
 const PeoplePage = () => {
@@ -19,12 +20,13 @@ const PeoplePage = () => {
         const numB = parseInt(b.alt.match(/\d+/)[0]);
         return numA - numB;
     });
-    console.log(sortedPhotos);
 
     return (
         <div>
             <Header fontColor="black"/>
-            <Navigator links={["Graduation", "City"]}/>
+            <div className="photography-header">
+                <h1>People</h1>
+            </div>
             <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
                 {sortedPhotos.map((photo, index) => (
@@ -38,6 +40,7 @@ const PeoplePage = () => {
                 ))}
                 </Masonry>
             </ResponsiveMasonry>
+            <Navigator links={["Graduation", "City"]}/>
         </div>
     );
 };

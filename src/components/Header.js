@@ -7,12 +7,12 @@ import { FaInstagram } from 'react-icons/fa';
 import IconBlack from '../assets/util/icon_black.svg';
 import IconWhite from '../assets/util/icon_white.svg';
 
-
-
 const HeaderPage = ({ fontColor }) => {
 
     const [showMenu, setShowMenu] = useState(false);
     const [iconColor, setIconColor] = useState(fontColor);
+    const photographyCategories = ['Landscape', 'Perspective', 'Graduation', 'People', 'City'];
+    const filmCategories = ['Necro 101', 'Clark', 'Noumena', 'Two Flares Up', "Hot"];
 
     const toggleMenu = () => {
 
@@ -70,8 +70,30 @@ const HeaderPage = ({ fontColor }) => {
         </div>
         <ul className="nav-items">
           <li><Link to="/" className="link" style={{ color: fontColor }}>Overview</Link></li>
-          <li><Link to="/photography" className="link" style={{ color: fontColor }}>Photogaphy</Link></li>
-          <li><Link to="/film" className="link" style={{ color: fontColor }}>Film</Link></li>
+          <li className="dropdown">
+              <Link to="/photography" className="link" style={{ color: fontColor }}>Photography</Link>
+              <ul className="mobile-dropdown" style={{ color: fontColor, backgroundColor: fontColor === 'black' ? 'white' : 'rgb(40, 40, 40)' }}>
+                {photographyCategories.map((category, index) => (
+                  <li key={index}>
+                    <Link to={`/photography/${category.toLowerCase()}`} className={`dropdown-link-${fontColor}`}>
+                      {category}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          <li className="dropdown">
+              <Link to="/film" className="link" style={{ color: fontColor }}>Film</Link>
+              <ul className="mobile-dropdown" style={{ color: fontColor, backgroundColor: fontColor === 'black' ? 'white' : 'rgb(40, 40, 40)' }}>
+                {filmCategories.map((category, index) => (
+                  <li key={index}>
+                    <Link to={`/film/${category.split(' ').join('').toLowerCase()}`} className={`dropdown-link-${fontColor}`}>
+                      {category}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
           <li><Link to="/about" className="link" style={{ color: fontColor }}>About</Link></li>
           <li><Link to="https://www.instagram.com/sashimii_photos/" target="_blank" className="link" style={{ color: fontColor }}><FaInstagram/></Link></li>
         </ul>

@@ -42,7 +42,7 @@
   }
 
   .movie-list {
-    padding-top: 5vh;
+    padding-top: 5vw;
     padding-left: 60vw;
     display: flex;
     flex-direction: column;
@@ -68,10 +68,22 @@
 
   @media screen and (max-width: 1300px){
     .movie-list {
-      padding-left: 30vw;
+      padding-left: 25vw;
+    }
+
+    .movie-list .movie-item:hover {
+      color: white;
+    }
+
+    .film-page {
+      height: 80vw;
+    }
+
+    .film-image {
+      height: 80vw;
     }
 
     .movie-list .movie-item {
-      font-size: 5vw;
+      font-size: 4vw;
     }
   }

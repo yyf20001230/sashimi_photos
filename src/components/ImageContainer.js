@@ -10,7 +10,7 @@ const ImageContainer = ({ photos, title }) => {
     return (
         <div className="image-container">
             <div className="title">{title}</div>
-            <ResponsiveMasonry columnsCountBreakPoints={{ 800: 2, 1000: 3 }} style={{ margin: "3vw 10vw 5vw 0vw" }}>
+            <ResponsiveMasonry columnsCountBreakPoints={{ 500: 1, 700: 2, 1000: 3 }} style={{ margin: "3vw 10vw 5vw 0vw" }}>
             <Masonry gutter="5vw">
                 {photos.map((photo, index) => (
                     <LazyLoadImage

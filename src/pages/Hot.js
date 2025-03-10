@@ -4,13 +4,13 @@ import VideoPlayer from '../components/VideoPlayer';
 import Header from '../components/Header';
 
 const HotPage = () => {
-  const videoLink = 'https://www.youtube.com/embed/N83mnrq6LGo?modestbranding=1&controls=0&rel=0&showinfo=0&loop=1&hd=1';
+  const videoLink = 'https://www.youtube.com/embed/N83mnrq6LGo?modestbranding=1&controls=0&rel=0&showinfo=0&loop=1&hd=1&autoplay=1';
   
 
   return (
     <div style={{ backgroundColor: "black" }}>
       <Header fontColor="white"/>
-      <VideoPlayer link={videoLink} margin={-3}/>
+      <VideoPlayer link={videoLink} margin={-1}/>
       <div className="text-container" style={{ marginTop: "-2vw" }}>
         <div className="title">HOT by Seventeen</div>
         <div className="text-entry">Northwestern KDance</div>
