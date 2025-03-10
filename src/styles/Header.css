@@ -21,13 +21,13 @@
   
   .logo {
     color: white;
-    font-size: 30px;
     font-family: Abel, monospace;
     transition: 0.3s, ease-in-out;
   }
 
   .logo-container {
     display: flex;
+    font-size: 30px;
     align-items: center;
   }
 
@@ -126,14 +126,15 @@
     background: rgb(60, 60, 60);
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1000px) {
 
     .logo-container {
-      width: 4vw;
+      font-size: 4vw;
     }
 
     .logo {
       font-size: 4vw;
+      width: 4vw;
       margin: 0.5vw;
     }
 
