@@ -10,7 +10,7 @@
 .photography-header {
   text-align: center;
   font-family: Abel, monospace;
-  font-size: 3vw;
+  font-size: 2vw;
   color: black;
 }
 
@@ -19,4 +19,10 @@
   margin-right: 8vw;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  .photography-header {
+    font-size: 5vw;
+  }
 }

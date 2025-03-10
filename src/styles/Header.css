@@ -129,11 +129,11 @@
   @media screen and (max-width: 1200px) {
 
     .logo-container {
-      width: 3vw;
+      width: 4vw;
     }
 
     .logo {
-      font-size: 3vw;
+      font-size: 4vw;
       margin: 0.5vw;
     }
 
