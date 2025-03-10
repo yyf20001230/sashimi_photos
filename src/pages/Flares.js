@@ -19,7 +19,7 @@ const FlaresPage = () => {
         <div className="text-entry">Director: 
           <a href="https://www.allanrodriguez.org/" target="_blank" rel="noreferrer">&nbsp; <u>Allan Rodriguez Bobadilla</u></a>
         </div>
-        <div className="text-entry">Role: Gaffer</div>
+        <div className="text-entry">Role: G&E</div>
         <div className="description">When high schooler, Lidia, decides to visit her cousin, Carmen, at college for the weekend they stumble upon a student protest. Against Carmen's best wishes, driven by her heart, Lidia, jumps in only for violence to strike. The police and military surround them. The students are outnumbered, they're outmatched, there's no escape.</div>
         <div className="watch-link">
           <a href="https://drive.google.com/file/d/1-RbXjCjwS01BYZtfTOu1tzWlK_u-FGHp/view?usp=drive_link" target="_blank" rel="noreferrer" style={{ paddingRight: "2vw", paddingTop: "2vw" }}>Video</a>
