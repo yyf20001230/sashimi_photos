@@ -67,7 +67,9 @@
     }
 
     .card {
-      margin-top: 5vw;
+      margin-top: 10vw;
+      height: 32vw;
+      width: 80vw;
     }
 
     .mobile-view {
