@@ -25,7 +25,7 @@ const GraduationPage = () => {
         <div>
             <Header fontColor="black"/>
             <div className="photography-header">
-                <h1>People</h1>
+                <h1>Graduation</h1>
             </div>
             <ResponsiveMasonry columnsCountBreakPoints={{ 800: 1, 1000: 2 }} style={{ margin: "5vw 10vw 5vw 10vw" }}>
                 <Masonry gutter="5vw">
