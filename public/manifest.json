@@ -3,9 +3,9 @@
   "name": "Sashimi Photos - Frank's Photography Portfolio",
   "icons": [
     {
-      "src": "icon_black.svg",
+      "src": "icon_black192.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/svg+xml"
+      "type": "image/png"
     },
     {
       "src": "icon_black192.png",
